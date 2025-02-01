@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company Details Form</title>
+<link rel="stylesheet"
+		href="sub.css"> 
+	<link rel="stylesheet"
+		href="Main.css"> 
+<link rel="stylesheet" href="Responsive.css">
+</head>
+<body>
+    <body> 
+	
+        <header> 
+    
+            <div class="logosec"> 
+                <img src= 
+    "https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+                    class="icn menuicn"
+                    id="menuicn"
+                    alt="menu-icon"> 
+            </div> 
+            <div class="message"> 
+                <div class="circle"></div> 
+                <img src= 
+    "https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png"
+                    class="icn"
+                    alt=""> 
+    
+                <div class="logo">Hello Admin</div> 
+                <div class="dp"> 
+                <img src= 
+    "https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                        class="dpicn"
+                        alt="dp"> 
+                </div> 
+            </div> 
+        </header> 
+        <div class="main-container"> 
+            <div class="navcontainer"> 
+                <nav class="nav"> 
+                    <div class="nav-upper-options"> 
+                        <div class="nav-option option2"> 
+                            
+                            <img src= 
+    "https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                                class="nav-img"
+                                alt="dashboard"> 
+                            <a href="home.html"><h3>Dashboard</h3> </a>
+                        </div> 
+    
+                        <div class="option1 nav-option"> 
+                            <img src= 
+    "https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+                                class="nav-img"
+                                alt="Company Details"> 
+                            <h3>Company</h3> 
+                        </div> 
+    
+                        <div class="nav-option option3"> 
+                            <img src= 
+    "https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png"
+                                class="nav-img"
+                                alt="Student Details"> 
+                            <a href="students.html"><h3>Students</h3></a>
+                        </div> 
+                        <div class="nav-option logout"> 
+                            <img src= 
+    "https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+                                class="nav-img"
+                                alt="logout"> 
+                        <a href="../login page/index.html"><h3>Logout</h3></a>    
+                        </div> 
+                    </div> 
+                </nav> 
+            </div> 
+    <main class="main">
+        <form id="form" class="form">
+            <div class="form-group">
+                <label for="name">Company</label>
+                <input type="text" id="name" placeholder="Enter Company name" required/>
+            </div>
+            <div class="form-group">
+                <label for="year">Company Type</label>
+                <select name="" id="year" required>
+                    <option value="" disabled selected>Select Type</option>                    
+                    <option value="Core">Core</option>
+                    <option value="It">IT</option>
+                    <option value="It and core">IT and core</option>
+                </select>            
+  
+            <div class="form-group">
+                <label for="dob">Start Date</label>
+                <div id="dob-container">
+                    <input type="date" id="dob-picker" name="dob-picker" required />
+                    <input type="text" id="dob-manual" name="dob-manual" placeholder="Enter your date of birth (YYYY-MM-DD)" pattern="\d{4}-\d{2}-\d{2}" title="Enter a valid date in the format YYYY-MM-DD" style="display: none;" required/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="dob">End Date</label>
+                <div id="dob-container">
+                    <input type="date" id="dob-picker" name="dob-picker" required />
+                    <input type="text" id="dob-manual" name="dob-manual" placeholder="Enter your date of birth (YYYY-MM-DD)" pattern="\d{4}-\d{2}-\d{2}" title="Enter a valid date in the format YYYY-MM-DD" style="display: none;" required/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Branches</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="inp-1" name="inp" value="css">
+                    <label for="inp-1">CSS</label><br>
+                    <input type="checkbox" id="inp-1" name="inp" value="AD">
+                    <label for="inp-1">AD</label><br>
+                    <input type="checkbox" id="inp-1" name="inp" value="Mech">
+                    <label for="inp-1">Mech</label><br>
+                    <input type="checkbox" id="inp-1" name="inp" value="ALL Branch">
+                    <label for="inp-1">ALL Branch</label><br>
+                </div>
+            </div>
+          <h3>Requirement</h3>
+
+            <div class="form-group">
+                <label for="tenthMark">10th Grade Mark Percentage</label>
+                <input type="number" id="tenthMark" name="tenthMark" step="0.01" min="0" max="100" placeholder="Enter percentage (0.00 - 100.00)" required>
+            </div>
+
+            <div class="form-group">
+                <label>Languages and Frameworks known <small>(Check all that apply)</small></label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="inp-1" name="inp" value="C">
+                    <label for="inp-1">C</label>
+                </div>
+            </div>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
